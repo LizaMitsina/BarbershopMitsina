@@ -1,108 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Лиза Митина">
-    <meta name="description" content="BARBERSHOP">
-    <meta name="keywords" content="стрижка,борода,усы">
-    <link rel="stylesheet" href="css/main.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Лиза Митина" />
+    <meta name="description" content="BARBERSHOP" />
+    <meta name="keywords" content="стрижка,борода,усы" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>BORODINSKI,Магазин</title>
-</head>
-    <body>
-        <header> 
-            <nav>
-            <a href="index.html"> 
-                <img src="jpg/logo-small.svg" widht="100px" alt="ЛОГО">
-            </a>
-            <ul>
-                <li><a href="inf.html"> Информация </a> </li>
-                <li><a href="news.html"> Новости </a> </li>
-                <li><a href="price.html"> Прайс-лист</a> </li>
-                <li><a href="shop.html">Магазин</a></li>
-                <li><a href="contact.html"> Контакты </a> </li>
-            </ul>
-            <ul>
-                <li> <button type="button">Войти</button></li>
-            </ul>
-            </nav>
-        </header>
-        <h1>Магазин</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="shop.html">Магазин</a></li>
-                <li>Средства для ухода</li>
-            </ul>
-        </nav>
-        <main>
-            <section>
-                <h2>Производители</h2>
-                <ul>
-                    <li><input type="checkbox">Baxter of California</li>
-                    <li><input type="checkbox">Mr Natty</li>
-                    <li><input type="checkbox">Suavecito</li>
-                    <li><input type="checkbox">Malin+Goetz</li>
-                    <li><input type="checkbox">Murray’s</li> 
-                    <li><input type="checkbox">American Crew</li>
-                </ul>
-            </section>
-            <section>
-                    <h2>Группы товаров</h2>
-                    <ul>
-                        <li><input type="radio" name="stat">Бритвенные принадлежности</li>
-                        <li><input type="radio" name="stat">Средства для ухода</li>
-                        <li><input type="radio" name="stat">Аксессуары</li>
-                     </ul>
-                     <button type="button">Показать</button>
-            </section>
-                                                        <!--Каталог товаров-->
-                    <section>
-                            <img src="jpg/Layer 47 copy.png" widht="220px" lenght="160px">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="jpg/logo-small.svg" widht="100px" alt="ЛОГО" />
+        </a>
+        <ul>
+          <li><a href="inf.html"> Информация </a></li>
+          <li><a href="news.html"> Новости </a></li>
+          <li><a href="price.html"> Прайс-лист</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="contact.html"> Контакты </a></li>
+        </ul>
+        <ul>
+          <li><button type="button">Войти</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Магазин</h1>
 
+      <ul type="none">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="shop.html">Магазин</a></li>
+        <li>Средства для ухода</li>
+      </ul>
+      <form>
+        <legend>Производители</legend>
+          <label><input type="checkbox" />Baxter of California</label><br />
+          <label><input type="checkbox" />Mr Natty</label><br />
+          <label><input type="checkbox" />Suavecito</label><br />
+          <label><input type="checkbox" />Malin+Goetz</label><br />
+          <label><input type="checkbox" />Murray’s</label><br />
+          <label><input type="checkbox" />American Crew</label><br />
+      
+        <legend>Группы товаров</legend>
+          <label for="stat1"
+            ><input type="radio" name="stat1" />Бритвенные принадлежности</label
+          ><br />
+          <label for="stat2"><input type="radio" name="stat2" />Средства для ухода</label
+          ><br />
+          <label for="stat3"><input type="radio" name="stat3" />Аксессуары</label><br />
+        </form>
+        <button type="submit">Показать</button>
 
-                    </section>  
-
-
-
-
-
-
-
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </main>
-        <footer>
-            <p>Барбершоп "Бородинский"<br>
-                Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br>
-                <a href="map.html">Как найти?</a><br>
-                Телефон +7 (495) 6660266
-            </p>
+      <!--Каталог(картинки+цена) товаров-->
+<!--Сделать через список арктиклов -->
+      <div>
         <div>
-            <p> Где нас найти?</p>
-            <ul>
-                <li> <a href="#"><img src="jpg/vk.svg" alt="vk"></a></li>
-                <li> <a href="#"><img src="jpg/facebook.svg" alt="facebook"></a></li>
-                <li> <a href="#"><img src="jpg/instagram.svg" alt="instagram"></a></li>
-            </ul>
+          <a href="item.html">
+            <img src="jpg/Layer 38.png" widht="150px" lenght="70px" /> </a
+          ><br />
+          <span>Набор для путешествий «Baxter of California»</span><br />
+          <span>2900p</span>
+          <button type="submit">Купить</button><br />
         </div>
-            <p>Разработано LizaMitsina </p>
-                   
-     </footer>
-    </body>
-    </html>
+        <div>
+          <a href="#">
+            <img src="jpg/Layer 30.png" widht="150px" lenght="70px" /> </a
+          ><br />
+          <span>Увлажняющий кондиционер «Baxter of California»</span><br />
+          <span>700p</span>
+          <button type="submit">Купить</button><br />
+        </div>
+        <div>
+          <a href="#">
+            <img src="jpg/Layer 39.png" widht="150px" lenght="70px" /> </a
+          ><br />
+          <span>Гель для волос«SUAVECITO»</span><br />
+          <span>290p</span>
+          <button type="submit">Купить</button><br />
+        </div>
+        <div>
+          <a href="#">
+            <img src="jpg/Layer 32.png" widht="150px" lenght="70px" /> </a
+          ><br />
+          <span>Глина для укладки волос «American crew»</span><br />
+          <span>500p</span>
+          <button type="submit">Купить</button><br />
+        </div>
+        <div>
+          <a href="#">
+            <img src="jpg/Layer 33.png" widht="150px" lenght="70px" /> </a
+          ><br />
+          <span>Гель для волос«AMERICAN CREW»</span><br />
+          <span>300p</span>
+          <button type="submit">Купить</button><br />
+        </div>
+        <div>
+          <a href="#">
+            <img src="jpg/Layer 42.png" widht="150px" lenght="70px" /> </a
+          ><br />
+          <span>Набор для бритья«Baxter of California»</span><br />
+          <span>3900p</span>
+          <button type="submit">Купить</button><br />
+        </div>
+      </div>
+      <!--j-->
+      <ul type="none">
+        <li><button type="button">1</button></li>
+        <li><button type="button">2</button></li>
+        <li><button type="button">3</button></li>
+        <li><button type="button">4</button></li>
+      </ul>
+    </main>
+    <footer>
+      <p>
+        Барбершоп "Бородинский"<br />
+        Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br />
+        <a href="map.html">Как найти?</a><br />
+        Телефон +7 (495) 6660266
+      </p>
+      <div>
+        <p>Где нас найти?</p>
+        <ul>
+          <li>
+            <a href="#"><img src="jpg/vk.svg" alt="vk" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="jpg/facebook.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="jpg/instagram.svg" alt="instagram" /></a>
+          </li>
+        </ul>
+      </div>
+      <span
+        >Разработано:<br />
+        LizaMitsina</span
+      >
+    </footer>
+  </body>
+</html>
