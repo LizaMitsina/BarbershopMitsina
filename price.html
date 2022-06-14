@@ -20,7 +20,7 @@
           <li><a href="news.html"> Новости </a></li>
           <li><a href="price.html"> Прайс-лист</a></li>
           <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contact.html"> Контакты </a></li>
+          <li><a href="#bottom"> Контакты </a></li>
         </ul>
         <ul>
           <li><button type="button">Войти</button></li>
@@ -31,61 +31,62 @@
       <h1>Прайс-лист</h1>
       <ul type="none">
         <li><a href="index.html">Главная</a></li>
-        <li>Прайс-лист</li>
+        <li><a>Прайс-лист</a></li>
       </ul>
 
-      <span>Истинно мужская классика</span>
-      <section>
-        <span>Мы используем только лучшие средства</span>
-        <ul type="">
+      <div>Истинно мужская классика</div>
+      <div>
+        <div>Мы используем только лучшие средства</div>
+        <ul>
           <li>Baxter of California</li>
           <li>Mr Natty</li>
           <li>Suavecito</li>
           <li>Malin+Goetz</li>
         </ul>
-      </section>
-      <section>
-        <span>Цены на услуги наших мастеров</span>
+      </div>
+      <div>
         <!-- таблица-->
         <table border="1">
+          <caption>
+            Цены на услуги наших мастеров
+          </caption>
           <tr>
             <td>Стрижка</td>
-            <td>1500р</td>
+            <td>1500&nbsp;&#8381;</td>
           </tr>
           <tr>
             <td>Стрижка бороды</td>
-            <td>500р</td>
+            <td>500&nbsp;&#8381;</td>
           </tr>
           <tr>
             <td>Накрутка усов</td>
-            <td>350р</td>
+            <td>350&nbsp;&#8381;</td>
           </tr>
         </table>
         <!--таблица-->
-      </section>
+      </div>
       <section>
         <p>Несколько слов о нас:</p>
 
         <p>
           Наша парикмахерская занимается исключительно мужскими стрижками.
-          <br />
           Стрижка каждого клиента для нас - это уникальная и продуманная до
-          мелочей работа.<br />
-          Мы не работаем на количество, мы делаем качество.
+          мелочей работа. Мы не работаем на количество, мы делаем качество.
         </p>
         <p>
-          Наша мастерская расположена в центре города, поэтому <br />
-          сделать стильную стрижку можно в любое время, даже в<br />
-          обеденный перерыв. Здесь вы можете погрузиться в удобную<br />
-          для вас атмосферу, чувствовать себя комфортно и свободно!
+          Наша мастерская расположена в центре города, поэтому сделать стильную
+          стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете
+          погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
+          свободно!
         </p>
       </section>
     </main>
     <footer>
       <p>
+        <a name="bottom"></a>
         Барбершоп "Бородинский"<br />
         Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br />
-        <a href="map.html">Как найти?</a><br />
+        <a href="maps.html">Как найти?</a><br />
         Телефон +7 (495) 6660266
       </p>
       <div>
@@ -102,10 +103,28 @@
           </li>
         </ul>
       </div>
-      <span
-        >Разработано:<br />
-        LizaMitsina
-      </span>
+      <div>
+        <span>Разработано:</span><br />
+        <span>LizaMitsina</span>
+      </div>
     </footer>
+    <!-- POP-UP всплывающие окно регистрации-->
+    <div class="popup-bg">
+      <div class="popup">
+        <img class="close-popup" src="jpg/cross-small.png" alt="close" />
+        <h2>Личный кабинет</h2>
+        <form>
+          <label for="mail">
+            Введите, пожалуйста свой логин и пароль<br />
+            <input type="email" name="mail" placeholder="e-mail" /><br />
+            <input type="password" name="mail" placeholder="пароль" /> </label
+          ><br />
+          <label><input type="checkbox" checked />Запомнить меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </form>
+        <button type="submit">Войти</button>
+      </div>
+    </div>
+    <!-- POP-UP-->
   </body>
 </html>

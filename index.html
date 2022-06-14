@@ -18,7 +18,7 @@
           <li><a href="news.html"> Новости </a></li>
           <li><a href="price.html"> Цена </a></li>
           <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contact.html"> Контакты </a></li>
+          <li><a href="#bottom"> Контакты </a></li>
         </ul>
         <ul>
           <li><button type="button">Войти</button></li>
@@ -122,6 +122,7 @@
     </main>
     <footer>
       <p>
+        <a name="bottom"></a>
         Барбершоп "Бородинский"<br />
         Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br />
         <a href="map.html">Как найти?</a><br />
@@ -143,5 +144,22 @@
       </div>
       <p>Разработано LizaMitsina</p>
     </footer>
+    <!-- POP-UP всплывающие окно регистрации-->
+<div class="popup-bg">
+  <div class="popup">
+    <img  class="close-popup" src="jpg/cross-small.png" alt="close">
+    <h2>Личный кабинет</h2>
+    <form>
+      <label for="mail"> Введите, пожалуйста свой логин и пароль<br>
+        <input type="email" name="mail" placeholder="e-mail"><br>
+        <input type="password" name="mail" placeholder="пароль">
+      </label><br>
+      <label><input type="checkbox" checked>Запомнить меня</label>
+      <a href="#" >Я забыл пароль!</a>
+    </form>
+    <button type="submit">Войти</button>
+  </div>
+</div>
+<!-- POP-UP-->
   </body>
 </html>

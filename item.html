@@ -20,7 +20,7 @@
           <li><a href="news.html"> Новости </a></li>
           <li><a href="price.html"> Прайс-лист</a></li>
           <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contact.html"> Контакты </a></li>
+          <li><a href="#bottom"> Контакты </a></li>
         </ul>
         <ul>
           <li><button type="button">Войти</button></li>
@@ -34,7 +34,7 @@
         <li><a href="index.html">Главная</a></li>
         <li><a href="shop.html">Магазин</a></li>
         <li><a href="#">Средства для ухода</a></li>
-        <li>Набор для путешествий "Baxter of California"</li>
+        <li><a>Набор для путешествий "Baxter of California"</a></li>
       </ul>
       <!--слайдер-->
       <div>
@@ -55,8 +55,7 @@
       <!--слайдер закончился-->
       <section>
         <br />
-        <span>Есть в наличии</span>
-        <span>Арктикул:Dexter-AE</span>
+        <div>Есть в наличии Арктикул:Dexter-AE</div>
         <br />
         <p>
           Travel Kit – необходимый аксессуар во время любого<br />
@@ -69,7 +68,7 @@
         <br />
         <span>2900р</span>
         <button type="submit">Купить</button><br />
-        <span> В набор входят:</span>
+        <div>В набор входят:</div>
         <ul type="">
           <li>Средство для умывания (50 мл)</li>
           <li>Увлажняющий крем (50 мл)</li>
@@ -81,6 +80,7 @@
     </main>
     <footer>
       <p>
+        <a name="bottom"></a>
         Барбершоп "Бородинский"<br />
         Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br />
         <a href="map.html">Как найти?</a><br />
@@ -100,10 +100,29 @@
           </li>
         </ul>
       </div>
-      <span
-        >Разработано:<br />
-        LizaMitsina</span
-      >
+      <div>
+        <span>Разработано:</span><br />
+        <span>LizaMitsina</span>
+      </div>
+
+      
     </footer>
+    <!-- POP-UP всплывающие окно регистрации-->
+<div class="popup-bg">
+  <div class="popup">
+    <img  class="close-popup" src="jpg/cross-small.png" alt="close">
+    <h2>Личный кабинет</h2>
+    <form>
+      <label for="mail"> Введите, пожалуйста свой логин и пароль<br>
+        <input type="email" name="mail" placeholder="e-mail"><br>
+        <input type="password" name="mail" placeholder="пароль">
+      </label><br>
+      <label><input type="checkbox" checked>Запомнить меня</label>
+      <a href="#" >Я забыл пароль!</a>
+    </form>
+    <button type="submit">Войти</button>
+  </div>
+</div>
+<!-- POP-UP-->
   </body>
 </html>
