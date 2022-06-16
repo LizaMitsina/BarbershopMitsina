@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Лиза Митина" />
+    <meta name="description" content="BARBERSHOP" />
+    <meta name="keywords" content="стрижка,борода,усы" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>BORODINSKI,Магазин</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="images/logo-small.svg" widht="100px" alt="ЛОГО" />
+        </a>
+        <ul>
+          <li><a href="inf1.html"> Информация </a></li>
+          <li><a href="news.html"> Новости </a></li>
+          <li><a href="price.html"> Прайс-лист</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#bottom"> Контакты </a></li>
+        </ul>
+        <ul>
+          <li>
+            <button type="button" class="button open popup">Войти</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Магазин</h1>
+
+      <ul type="none">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="shop.html">Магазин</a></li>
+        <li><a>Средства для ухода</a></li>
+      </ul>
+      <form>
+        <legend>Производители</legend>
+        <label><input type="checkbox" checked />Baxter of California</label
+        ><br />
+        <label><input type="checkbox" />Mr Natty</label><br />
+        <label><input type="checkbox" checked />Suavecito</label><br />
+        <label><input type="checkbox" />Malin+Goetz</label><br />
+        <label><input type="checkbox" />Murray’s</label><br />
+        <label><input type="checkbox" checked />American Crew</label><br />
+
+        <legend>Группы товаров</legend>
+        <label for="radio1"
+          ><input type="radio" name="stat" id="radio1" />Бритвенные
+          принадлежности</label
+        ><br />
+        <label for="radio2"
+          ><input type="radio" name="stat" id="radio2" />Средства для
+          ухода</label
+        ><br />
+        <label for="radio3"
+          ><input type="radio" name="stat" id="radio3" />Аксессуары</label
+        ><br />
+      </form>
+      <button type="submit">Показать</button>
+
+      <!--Каталог(картинки+цена) товаров-->
+
+      <ul>
+        <li>
+          <article>
+            <a href="item.html">
+              <img src="images/shop/Layer 38.png" widht="150px" lenght="70px" />
+            </a>
+
+            <div>Набор для путешествий «Baxter of California»</div>
+            <span>2900&nbsp;&#8381;</span> <button type="button">Купить</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="images/shop/Layer 30.png" widht="150px" lenght="70px" />
+            </a>
+
+            <div>Увлажняющий кондиционер «Baxter of California»</div>
+            <span>700&nbsp;&#8381;</span> <button type="button">Купить</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="images/shop/Layer 39.png" widht="150px" lenght="70px" />
+            </a>
+
+            <div>Гель для волос«SUAVECITO»</div>
+            <span>290&nbsp;&#8381;</span> <button type="button">Купить</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="images/shop/Layer 32.png" widht="150px" lenght="70px" />
+            </a>
+
+            <div>Глина для укладки волос «American crew»</div>
+            <span>500&nbsp;&#8381;</span> <button type="button">Купить</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="images/shop/Layer 33.png" widht="150px" lenght="70px" />
+            </a>
+
+            <div>Гель для волос«AMERICAN CREW»</div>
+            <span>300&nbsp;&#8381;</span> <button type="button">Купить</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="images/shop/Layer 42.png" widht="150px" lenght="70px" />
+            </a>
+
+            <div>Набор для бритья«Baxter of California»</div>
+
+            <span>3900&nbsp;&#8381;</span> <button type="button">Купить</button>
+          </article>
+        </li>
+      </ul>
+
+      <!--список товаров закончен-->
+
+      <ul>
+        <li><button type="button">1</button></li>
+        <li><button type="button">2</button></li>
+        <li><button type="button">3</button></li>
+        <li><button type="button">4</button></li>
+      </ul>
+    </main>
+    <footer>
+      <p id="bottom">
+        Барбершоп "Бородинский"<br />
+        Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br />
+        <a href="map.html">Как найти?</a><br />
+        Телефон +7 (495) 6660266
+      </p>
+      <div>
+        <p>Где нас найти?</p>
+        <ul>
+          <li>
+            <a href="#"><img src="images/vk.svg" alt="vk" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/facebook.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/instagram.svg" alt="instagram" /></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <span>Разработано:</span>
+        <span>LizaMitsina</span>
+      </div>
+    </footer>
+    <!-- POP-UP всплывающие окно регистрации-->
+    <div class="popup-bg">
+      <div class="popup">
+        <img class="close-popup" src="images/cross-small.png" alt="close" />
+        <h2>Личный кабинет</h2>
+        <form>
+          <label>Введите, пожалуйста, свой логин и пароль</label>
+          <input type="email" placeholder="e-mail" />
+          <input type="password" placeholder="пароль" />
+          <label><input type="checkbox" checked />Запомнить меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </form>
+        <button type="submit">Войти</button>
+      </div>
+    </div>
+    <!-- POP-UP-->
+  </body>
+</html>
