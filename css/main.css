@@ -1,26 +1,159 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #FFF;
-    text-transform: uppercase;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
 
-    background-color: #000;
-    background-image: url("images/bg.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;    
+  background-image: url("/images/index/bg.svg");
+  background-color: #000;
+  background-position: top center;
 }
 
 a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: #000;
+  border: none;
+}
+button:hover,
+button:focus,
+button:active {
+  background-color: #663d15;
+}
+.main-nav {
+  font-size: 16px;
+  color: #fff;
+  line-height: 20px;
+  background-color: #000;
+}
+
+.login,
+.site-nav {
+  list-style: none;
+}
+
+.login a,
+.site-nav a {
+  color: #fff;
+}
+
+.login a:hover,
+.login a:focus,
+.site-nav:hover,
+.site-nav:focus {
+  background: color #242424;
+}
+
+.benefits {
+  list-style: none;
+}
+.benefits-item {
+  text-align: center;
+}
+
+.benefits-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.columns {
+  color: #000;
+  background-color: rgb(235, 232, 232);
+  background-image: url("/images/index/patern.svg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+.news {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
+.gallery {
+  background-color: #ccc;
+  border: 7px solid white;
+}
+
+.apoint input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+.apoint input:focus {
+  border-color: #663d15;
+}
+
+.main-foot {
+  color: #fff;
+  background-color: #212121;
+  background-image: url("/images/footer.svg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.addres-foot a {
+  text-decoration: underline;
+}
+
+.foot-contacts {
+  text-align: center;
+}
+
+.foot-contacts ul {
+  list-style: none;
+}
+
+.popup-bg {
+  color: #000;
+  background-color: #f8f3f0;
+  background-image: url("/images/index/patern.svg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.popup h2 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.popup input {
+  font: inherit;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+}
+
+.popup input:focus {
+  border-color: #663d15;
+}
+.chek:focus,
+.chek:hover {
+  border-color: #663d15;
+}
+
+.popup a {
+    color: #000;
+  text-decoration: underline;
+}
+.popup a:hover,
+.popup a:focus{
     text-decoration: none;
 }
-
-.main-nav {
-    font-size: 16px;
-    color: #FFF;
-    line-height: 20px;
-}
-
