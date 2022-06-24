@@ -8,9 +8,10 @@ body {
   color: #fff;
   text-transform: uppercase;
 
-  background-image: url("/images/index/bg.svg");
+  background-image: url("/images/index/bg.svg") /cover;
   background-color: #000;
   background-position: top center;
+  background-repeat: repeat;
 }
 
 a {
@@ -29,13 +30,33 @@ button {
 button:hover,
 button:focus,
 button:active {
-  background-color: #663d15;
+  background-color: #bebcba;
+  color: #000;
 }
+/*Навигация в шапке*/
 .main-nav {
   font-size: 16px;
   color: #fff;
   line-height: 20px;
   background-color: #000;
+  margin-top:22px;
+  display: flex;
+}
+.login{
+  margin-left: auto;
+}
+
+
+.site-nav{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.site-nav li a{
+  font-size: 16px;
+}
+.site-nav li{
+  margin-right: 27px;
 }
 
 .login,
@@ -47,14 +68,23 @@ button:active {
 .site-nav a {
   color: #fff;
 }
-
+/**/
+.barber-logo {
+  text-align: center;
+  margin-top: 93px; margin-bottom: 59px;
+}
+ .feut{
+  margin-bottom: 45px;
+ }
 .login a:hover,
 .login a:focus,
 .site-nav:hover,
 .site-nav:focus {
-  background: color #242424;
-}
+  background:  #cccbcb;
+  color: #000;
 
+}
+/*Преимущества*/
 .benefits {
   list-style: none;
 }
@@ -67,13 +97,67 @@ button:active {
   line-height: 42px;
   text-transform: uppercase;
 }
+/**/
 
+section{padding-top: 33px;} 
+
+/*чёрные кнопки по странице*/
+
+.btn:hover {
+  background:  #cccbcb;
+  color: #000;
+}
+.btn {
+  transition:  all 0.5s ease;
+}
+
+.news-container a{
+  display:block;
+  text-align: center;
+  padding: 9px  0;
+  width: 130px;
+  color: #f7f4f1;
+  background-color: #000;
+  
+}
+.map,
+.mailto{
+  display:inline-block;
+
+  text-align: center;
+  padding: 9px 0;
+  width: 140px;
+  color: #f7f4f1;
+  background-color: #000;
+  
+}
+.gallery-container button{
+  display:inline-block;
+
+  text-align: center;
+  padding: 9px 0;
+  width: 140px;
+  color: #f7f4f1;
+  background-color: #000;
+}
+.apoint button{ 
+  display:inline-block;
+
+  text-align: center;
+  padding: 9px 0;
+  width: 300px;
+  color: #f7f4f1;
+  background-color: #000;}
+/**/
+/*Новости и галлерея*/
 .columns {
   color: #000;
   background-color: rgb(235, 232, 232);
   background-image: url("/images/index/patern.svg");
   background-position: 0 0;
   background-repeat: repeat;
+  display: flex;
+  justify-content: space-between;
 }
 
 .columns h2 {
@@ -82,16 +166,20 @@ button:active {
 }
 .news {
   list-style: none;
+  text-align: left;
 }
-
+.news-container{text-align: left;}
 .news-item time {
   text-transform: none;
 }
+
+
+
 .gallery {
   background-color: #ccc;
   border: 7px solid white;
 }
-
+/**/
 .apoint input {
   font: inherit;
   background-color: transparent;
@@ -150,10 +238,53 @@ button:active {
 }
 
 .popup a {
-    color: #000;
+  color: #000;
   text-decoration: underline;
 }
 .popup a:hover,
-.popup a:focus{
-    text-decoration: none;
+.popup a:focus {
+  text-decoration: none;
+}
+/*флэкс преимуществ*/
+.feut {
+  width: 934px;
+  height: 219px;
+  
+}
+/* флэкс-контейнер*/
+.benefits {
+  display: flex;
+  justify-content: center;
+}
+/*флэкс-элемент*/
+.benefits-item {
+  color: #f7f4f1;
+  line-height: 24px;
+  text-align: center;
+}
+/*флэкс-контент*/
+.benefits-item p {
+  text-align: center;
+
+  width: 299px;
+  height: 123px;
+  padding: 7px 12px 31px 12px;
+  margin-top: 7px;
+}
+.benefits-item img{
+  margin-top: 18px;
+  padding: 0;
+}
+.benefits-item h3{
+  margin-bottom: 0;
+}
+/*Новости,галлерея,запись,контакты*/
+.columns{
+  display:flex;
+}
+.news-container{
+  text-align: left;
+}
+.gallery-container{
+  text-align: center;
 }
