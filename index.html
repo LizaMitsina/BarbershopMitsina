@@ -17,7 +17,9 @@
   </head>
   <body>
     <header>
+      
       <nav class="main-nav">
+        <div class="main-nav-container">
         <ul class="site-nav">
           <li><a href="inf.html"> Информация </a></li>
           <li><a href="news.html"> Новости </a></li>
@@ -28,7 +30,7 @@
         <ul class="login">
           <li class="login"><img src="images/login.png"><button type="button">Войти</button></li>
         </ul>
-      </nav>
+      </nav></div>
       <a class="main-logo">
         <p class="barber-logo">
         <img
@@ -39,8 +41,9 @@
       </a>
     </header>
     <main>
+      <div class="main-container">
        <section class="feut">
-        
+       
         <ul class="benefits">
           <li class="benefits-item">
             <h3>БЫСТРО</h3>
@@ -68,7 +71,8 @@
           </li>
         </ul>
       </section>
-      <div class="columns">
+
+      <div class="columns-news-gallery">
       <section class="news-container">
         <h2>НОВОСТИ</h2>
         <ul class="news">
@@ -93,17 +97,19 @@
         <h2>Фотогалерея</h2>
         <figure class="gallery">
           <a href="#"></a>
+          
           <img
             src="images/index/Object (1).png"
             alt="Интерьер зала"
-            weidth="325"
-            lenght="152"
+            width="325"
+            lenght="150"
           />
         </figure>
         <button type="button" class="btn">Вперёд</button>
         <button type="button" class="btn">Назад</button>
-      </section></div>
-      <div class="columns">
+      </section>
+    </div>
+      <div class="columns-contact-form">
       <section class="contacts">
         <h2>Контактная информация</h2>
         <p>
@@ -132,9 +138,10 @@
           ><input type="text" placeholder="Телефон" />
         </form>
         <button type="submit" class="btn">Отправить</button>
-      </section></div>
+      </section></div></div>
     </main>
     <footer class="main-footer">
+    <div class="footer-container">
       <p id="bottom" class="addres-foot">
         Барбершоп "Бородинский"<br />
         Адрес : г. Санкт-Петербург, Б.Конюшенная д.19/8<br />
@@ -143,7 +150,7 @@
       </p>
       <div class="foot-cotacts">
         <p>Где нас найти?</p>
-        <ul >
+        <ul class="social" >
           <li>
             <a href="#"><img src="images/vk.svg" alt="vk" /></a>
           </li>
@@ -155,10 +162,11 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="foot-copyright">
         <span>Разработано:</span>
         <span>LizaMitsina</span>
       </div>
+    </div>
     </footer>
     <!-- POP-UP всплывающие окно регистрации-->
     <div class="popup-bg">

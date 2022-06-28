@@ -7,11 +7,13 @@ body {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-
-  background-image: url("/images/index/bg.svg") /cover;
-  background-color: #000;
+ /* background-color: #000;
+  background-image: url(/images/barberbg.png);
+  
   background-position: top center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;*/
+  background: url(/images/barberbg.png) no-repeat 0 0;
+
 }
 
 a {
@@ -34,28 +36,41 @@ button:active {
   color: #000;
 }
 /*Навигация в шапке*/
+header {
+  width: 100%;
+}
+
 .main-nav {
   font-size: 16px;
   color: #fff;
   line-height: 20px;
   background-color: #000;
-  margin-top:22px;
+  margin-top: 22px;
+  margin-bottom: 60px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.login{
-  margin-left: auto;
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.login {
+  width: 140px;
 }
 
-
-.site-nav{
+.site-nav {
+  width: 620px;
   display: flex;
+
   align-items: center;
   text-align: center;
 }
-.site-nav li a{
+.site-nav li a {
   font-size: 16px;
 }
-.site-nav li{
+.site-nav li {
   margin-right: 27px;
 }
 
@@ -71,24 +86,37 @@ button:active {
 /**/
 .barber-logo {
   text-align: center;
-  margin-top: 93px; margin-bottom: 59px;
+  margin-top: 93px;
+  margin-bottom: 59px;
 }
- .feut{
-  margin-bottom: 45px;
- }
+
 .login a:hover,
 .login a:focus,
 .site-nav:hover,
 .site-nav:focus {
-  background:  #cccbcb;
+  background: #cccbcb;
   color: #000;
-
 }
+
+.news-container {
+  width: 50%;
+}
+
 /*Преимущества*/
+.feut {
+  width: 933px;
+  text-align: center;
+  margin-bottom: 80px;
+}
 .benefits {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .benefits-item {
+  width: 300px;
   text-align: center;
 }
 
@@ -99,58 +127,12 @@ button:active {
 }
 /**/
 
-section{padding-top: 33px;} 
-
-/*чёрные кнопки по странице*/
-
-.btn:hover {
-  background:  #cccbcb;
-  color: #000;
-}
-.btn {
-  transition:  all 0.5s ease;
-}
-
-.news-container a{
-  display:block;
-  text-align: center;
-  padding: 9px  0;
-  width: 130px;
-  color: #f7f4f1;
-  background-color: #000;
-  
-}
-.map,
-.mailto{
-  display:inline-block;
-
-  text-align: center;
-  padding: 9px 0;
-  width: 140px;
-  color: #f7f4f1;
-  background-color: #000;
-  
-}
-.gallery-container button{
-  display:inline-block;
-
-  text-align: center;
-  padding: 9px 0;
-  width: 140px;
-  color: #f7f4f1;
-  background-color: #000;
-}
-.apoint button{ 
-  display:inline-block;
-
-  text-align: center;
-  padding: 9px 0;
-  width: 300px;
-  color: #f7f4f1;
-  background-color: #000;}
-/**/
 /*Новости и галлерея*/
-.columns {
+.columns-news-gallery {
+  width: 933px;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
   color: #000;
   background-color: rgb(235, 232, 232);
   background-image: url("/images/index/patern.svg");
@@ -159,27 +141,62 @@ section{padding-top: 33px;}
   display: flex;
   justify-content: space-between;
 }
-
-.columns h2 {
-  font-size: 30px;
-  line-height: 42px;
+.news-container {
+  width: 380px;
 }
 .news {
   list-style: none;
-  text-align: left;
+  margin: 0;
+  padding: 0;
 }
-.news-container{text-align: left;}
-.news-item time {
+.columns-news-gallery h2 {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.news li {
+  margin-bottom: 15px;
+}
+.news-container time {
   text-transform: none;
+  margin-top: 6px;
 }
-
-
-
-.gallery {
-  background-color: #ccc;
-  border: 7px solid white;
+.news-container p {
+  margin: 0;
+}
+.news-container a {
+  margin-top: 30px;
+}
+.gallery-container {
+  width: 300px;
+}
+.gallery img {
+  padding: 0;
+  text-align: center;
+  background-color: #cccbcb;
+  border: 6px solid #fff;
 }
 /**/
+
+/*Контакты и форма*/
+.columns-contact-form {
+  width: 933px;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
+  color: #000;
+  background-color: rgb(235, 232, 232);
+  background-image: url("/images/index/patern.svg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts {
+  width: 380px;
+}
+.apoint {
+  width: 300px;
+}
 .apoint input {
   font: inherit;
   background-color: transparent;
@@ -189,25 +206,114 @@ section{padding-top: 33px;}
   border-color: #663d15;
 }
 
-.main-foot {
+/**/
+
+/*чёрные кнопки по странице*/
+.btn:hover {
+  background: #cccbcb;
+  color: #000;
+}
+.btn {
+  transition: all 0.5s ease;
+}
+
+.news-container a {
+  display: block;
+  text-align: center;
+  padding: 9px 0;
+  width: 130px;
+  color: #f7f4f1;
+  background-color: #000;
+}
+.map,
+.mailto {
+  display: inline-block;
+
+  text-align: center;
+  padding: 9px 0;
+  width: 140px;
+  color: #f7f4f1;
+  background-color: #000;
+}
+.gallery-container button {
+  display: inline-block;
+
+  text-align: center;
+  padding: 9px 0;
+  width: 140px;
+  color: #f7f4f1;
+  background-color: #000;
+}
+.apoint button {
+  display: inline-block;
+
+  text-align: center;
+  padding: 9px 0;
+  width: 300px;
+  color: #f7f4f1;
+  background-color: #000;
+}
+/**/
+
+/*Футер*/
+.main-footer {
+  margin-top: 65px;
+  padding: 60px;
+
+
   color: #fff;
   background-color: #212121;
   background-image: url("/images/footer.svg");
   background-position: 0 0;
   background-repeat: repeat;
 }
+.addres-foot,
+.foot-copyrighr{
+  margin:0;
+}
+.foot-copyrighr{
+  width: 150px;
+  margin-left: auto;
+}
+.foot-contacts{
+  width: 145px;
+}
+.social{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.addres-foot{
+  width: 320px;
+  margin-right: 80px;
+}
+.footer-container{
+  width: 933px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .addres-foot a {
   text-decoration: underline;
+  color: #f7f4f1;
+  
 }
 
 .foot-contacts {
   text-align: center;
+  width: 320px;
 }
 
 .foot-contacts ul {
   list-style: none;
 }
 
+
+
+
+/*Логин-пароль*/
 .popup-bg {
   color: #000;
   background-color: #f8f3f0;
@@ -245,46 +351,6 @@ section{padding-top: 33px;}
 .popup a:focus {
   text-decoration: none;
 }
-/*флэкс преимуществ*/
-.feut {
-  width: 934px;
-  height: 219px;
-  
-}
-/* флэкс-контейнер*/
-.benefits {
-  display: flex;
-  justify-content: center;
-}
-/*флэкс-элемент*/
-.benefits-item {
-  color: #f7f4f1;
-  line-height: 24px;
-  text-align: center;
-}
-/*флэкс-контент*/
-.benefits-item p {
-  text-align: center;
+/**/
 
-  width: 299px;
-  height: 123px;
-  padding: 7px 12px 31px 12px;
-  margin-top: 7px;
-}
-.benefits-item img{
-  margin-top: 18px;
-  padding: 0;
-}
-.benefits-item h3{
-  margin-bottom: 0;
-}
-/*Новости,галлерея,запись,контакты*/
-.columns{
-  display:flex;
-}
-.news-container{
-  text-align: left;
-}
-.gallery-container{
-  text-align: center;
-}
+
