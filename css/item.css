@@ -126,6 +126,9 @@ header {
   background: #212121;
   color: #f7f4f1;
 }
+.login-btn{
+  text-transform: uppercase;
+}
 
 main {
   background-color: #fff;
