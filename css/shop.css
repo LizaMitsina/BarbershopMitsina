@@ -203,16 +203,16 @@ main {
 .chek-label::after {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: url(/images/shop/cross.png) no-repeat 0 0;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   z-index: 2;
 }
-.name-prod:checked + .chek-label::after:checked {
+input.name-prod:checked + .chek-label::after {
   opacity: 1;
 }
 
@@ -226,12 +226,13 @@ main {
 }
 .radio-label {
   padding-left: 35px;
+  width: 100px;
 }
 .radio-label::before {
   content: "";
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: #000 2px solid;
   border-radius: 50%;
   position: absolute;
@@ -242,18 +243,18 @@ main {
 .radio-label::after {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border: 1px #000 solid;
   border-radius: 50%;
   background-color: #000;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   z-index: 2;
 }
-.radio-input:checked + .radio-label::after:checked {
+.radio-input:checked + .radio-label::after {
   opacity: 1;
 }
 .btn-show {
@@ -286,7 +287,7 @@ main {
   margin: 0;
   padding: 10px 0;
   line-height: 18px;
-  background-color: #bab5b2;
+  background-color:#d9d7d7;
 }
 .buy-price {
   text-align: center;
@@ -323,7 +324,10 @@ main {
   width: 44px;
   height: 44px;
 }
-
+.btn-page-li.active{
+  color: #000;
+  background-color:#fff;
+}
 /*Футер*/
 .main-footer p {
   margin: 0;
@@ -335,7 +339,7 @@ main {
   width: 100%;
   color: #fff;
   background-color: #212121;
-  background-image: url("/images/footer.svg");
+  background-image: url(/images/footer.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   display: flex;
