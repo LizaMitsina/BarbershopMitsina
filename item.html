@@ -23,10 +23,10 @@
               <img src="images/logo-small.svg" widht="100px" alt="ЛОГО" />
             </a>
           </li>
-          <li><a href="inf.html" class="link-site"> Информация </a></li>
-          <li><a href="news.html" class="link-site"> Новости </a></li>
+          <li><a href="#" class="link-site"> Информация </a></li>
+          <li><a href="#" class="link-site"> Новости </a></li>
           <li><a href="price.html" class="link-site"> Прайс-лист</a></li>
-          <li><a href="shop.html" class="link-site">Магазин</a></li>
+          <li><a href="shop.html" class="link-site active-link">Магазин</a></li>
           <li><a href="#bottom" class="link-site"> Контакты </a></li>
         </ul>
         <ul class="login">
@@ -172,22 +172,23 @@
         </div>
       </div>
     </footer>
-
-    <!-- POP-UP всплывающие окно регистрации
+    <!-- POP-UP всплывающие окно регистрации-->
     <div class="popup-bg">
       <div class="popup">
-        <img class="close-popup" src="images/cross-small.png" alt="close" />
+        
         <h2>Личный кабинет</h2>
         <form>
-          <label>Введите, пожалуйста, свой логин и пароль</label>
-          <input type="email" placeholder="e-mail" />
-          <input type="password" placeholder="пароль" />
-          <label><input type="checkbox" checked />Запомнить меня</label>
-          <a href="#">Я забыл пароль!</a>
+          <label class="label-email">Введите, пожалуйста, свой логин и пароль</label>
+          <input type="email" placeholder="ЛОГИН" class="e-mail"/>
+          <input type="password" placeholder="ПАРОЛЬ" class="password" />
+          <div class="popupchek">
+          <div class="memory">
+            <input type="checkbox" checked id="memory" class="chek"/><label for="memory" class="label-memory">Запомнить меня</label>
+          </div>
+          <a href="#">Я забыл пароль!</a></div>
         </form>
-        <button type="submit">Войти</button>
+        <button type="submit" class=" btn btn-log">Войти</button>
       </div>
     </div>
-    POP-UP-->
   </body>
 </html>

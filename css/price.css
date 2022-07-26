@@ -116,6 +116,11 @@ header {
 .site-nav a {
   color: #fff;
 }
+.active-link{
+  border-bottom: 3px #f1f1f0 solid;
+  background: #212121;
+  padding: 25px 20px 22px 20px;
+}
 main {
   background-color: #fff;
   background-image: url(/images/index/background.png) repeat 0 0;
@@ -321,34 +326,114 @@ table td {
   list-style: none;
 }
 
+
 /*Логин-пароль*/
 .popup-bg {
+  display: none;
+  width: 480px;
+  height: 385px;
   color: #000;
   background-color: #f8f3f0;
-  background-image: url("/images/index/patern.svg");
+  box-shadow: 1px 1px 10px 1px #b5b2af;
+  background-color: #f8f3f0;
+  background-image: url(/images/index/patern.svg);
   background-position: 0 0;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
-
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popupchek {
+  padding: 0;
+  margin: 0;
+}
 .popup h2 {
   font-size: 32px;
   line-height: 42px;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 45px;
+}
+.popup form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.label-email {
+  font-size: 14px;
+  line-height: 24px;
+  width: 210px;
+  margin-bottom: 10px;
+}
+.e-mail,
+.password {
+  width: 300px;
+  padding: 10px;
+  border: 3px #212121 solid;
+  background-color: inherit;
+  margin-bottom: 10px;
+}
+.popupchek {
+  width: 100%;
+  display: flex;
+}
+.popupchek a {
+  display: inline-block;
+  margin-left: auto;
 }
 
-.popup input {
-  font: inherit;
-  color: #000;
-  text-transform: uppercase;
-  background-color: #f9f6f3;
-  border: 2px solid #000;
+.chek {
+  appearance: none;
 }
-
-.popup input:focus {
-  border-color: #663d15;
+.memory {
+  margin-bottom: 18px;
 }
-.chek:focus,
-.chek:hover {
-  border-color: #663d15;
+.label-memory {
+  padding-left: 25px;
+  position: relative;
+}
+.label-memory::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: #000 2px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.label-memory::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(/images/shop/cross.png) no-repeat 0 0;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+}
+input.chek:checked + .label-memory::after {
+  opacity: 1;
+}
+.btn-log {
+  display: block;
+  width: 320px;
+  background-color: #000;
+  padding: 10px 0;
+  margin-right: 0;
+}
+.popup.e-mail:focus,
+.popup.password:focus,
+.popup.e-mail:active,
+.popup.password:active {
+  border-color: #f34004;
 }
 
 .popup a {
