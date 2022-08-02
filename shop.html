@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="java/script.js"></script>
     <title>BORODINSKI,Магазин</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
           </ul>
           <ul class="login">
             <li class="login">
-              <button type="button" class="button open popup">Войти</button>
+              <button type="button" class="button open popup-btn">Войти</button>
             </li>
           </ul>
         </div>
@@ -61,12 +62,10 @@
                   <label class="chek-label" for="chek-1"
                     >Baxter of California</label
                   >
-                  
                 </div>
                 <div class="chek">
                   <input type="checkbox" class="name-prod" id="chek-2" />
                   <label class="chek-label" for="chek-2">Mr Natty</label>
-                  
                 </div>
                 <div class="chek">
                   <input
@@ -76,27 +75,23 @@
                     id="chek-3"
                   />
                   <label class="chek-label" for="chek-3">Suavecito</label>
-                  
                 </div>
                 <div class="chek">
                   <input type="checkbox" class="name-prod" id="chek-4" />
                   <label class="chek-label" for="chek-4">Malin+Goetz</label>
-                  
                 </div>
                 <div class="chek">
                   <input type="checkbox" class="name-prod" id="chek-5" />
                   <label class="chek-label" for="chek-5">Murray’s</label>
-                  
                 </div>
                 <div class="chek">
                   <input
-                  type="checkbox"
-                  checked
-                  class="name-prod"
-                  id="chek-6"
-                />
+                    type="checkbox"
+                    checked
+                    class="name-prod"
+                    id="chek-6"
+                  />
                   <label class="chek-label" for="chek-6">American Crew</label>
-                 
                 </div>
               </div>
 
@@ -104,37 +99,34 @@
                 <legend>Группы товаров</legend>
                 <div class="radio">
                   <input
-                  type="radio"
-                  name="stat"
-                  id="radio1"
-                  class="radio-input"
-                />
+                    type="radio"
+                    name="stat"
+                    id="radio1"
+                    class="radio-input"
+                  />
                   <label for="radio1" class="radio-label"
                     >Бритвенные принадлежности</label
                   >
-                 
                 </div>
                 <div class="radio">
                   <input
-                  type="radio"
-                  name="stat"
-                  id="radio2"
-                  class="radio-input"
-                />
+                    type="radio"
+                    name="stat"
+                    id="radio2"
+                    class="radio-input"
+                  />
                   <label for="radio2" class="radio-label"
                     >Средства для ухода</label
                   >
-                 
                 </div>
                 <div class="radio">
                   <input
-                  type="radio"
-                  name="stat"
-                  id="radio3"
-                  class="radio-input"
-                />
+                    type="radio"
+                    name="stat"
+                    id="radio3"
+                    class="radio-input"
+                  />
                   <label for="radio3" class="radio-label">Аксессуары</label>
-                 
                 </div>
               </div>
             </form>
@@ -265,7 +257,9 @@
 
             <ul class="btn-page">
               <li class="btn-page-li"><button type="button">1</button></li>
-              <li class="btn-page-li active"><button type="button">2</button></li>
+              <li class="btn-page-li ">
+                <button type="button" class="active-li">2</button>
+              </li>
               <li class="btn-page-li"><button type="button">3</button></li>
               <li class="btn-page-li"><button type="button">4</button></li>
             </ul>
@@ -337,23 +331,33 @@
         </div>
       </div>
     </footer>
-   <!-- POP-UP всплывающие окно регистрации-->
-   <div class="popup-bg">
-    <div class="popup">
-      
-      <h2>Личный кабинет</h2>
-      <form>
-        <label class="label-email">Введите, пожалуйста, свой логин и пароль</label>
-        <input type="email" placeholder="ЛОГИН" class="e-mail"/>
-        <input type="password" placeholder="ПАРОЛЬ" class="password" />
-        <div class="popupchek">
-        <div class="memory">
-          <input type="checkbox" checked id="memory" class="chek"/><label for="memory" class="label-memory">Запомнить меня</label>
+    <!-- POP-UP всплывающие окно регистрации-->
+    <div class="popup-bg ">
+      <div class="popup-cont">
+        <div class="popup">
+          <h2>Личный кабинет</h2>
+          <form>
+            <label class="label-email"
+              >Введите, пожалуйста, свой логин и пароль</label
+            >
+            <input type="email" placeholder="ЛОГИН" class="e-mail" />
+            <input type="password" placeholder="ПАРОЛЬ" class="password" />
+            <div class="popupchek">
+              <div class="memory">
+                <input type="checkbox" checked id="memory1" class="chek-pop" />
+                <label
+                  for="memory1"
+                  class="label-memory"
+                  >Запомнить меня</label
+                >
+              </div>
+              <a href="#">Я забыл пароль!</a>
+            </div>
+          </form>
+          <button type="submit" class="btn btn-log">Войти</button>
         </div>
-        <a href="#">Я забыл пароль!</a></div>
-      </form>
-      <button type="submit" class=" btn btn-log">Войти</button>
+        <a href="#" alt="Закрыть" class="cross-small">X</a>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

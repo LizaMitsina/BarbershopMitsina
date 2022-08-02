@@ -143,6 +143,11 @@ main {
   display: block;
   padding: 5px 15px 5px 0;
 }
+.active-link{
+  border-bottom: 3px #f1f1f0 solid;
+  background: #212121;
+  padding: 25px 20px 22px 20px;
+}
 .road {
   list-style: none;
   margin: 0;
@@ -287,7 +292,7 @@ input.name-prod:checked + .chek-label::after {
   margin: 0;
   padding: 10px 0;
   line-height: 18px;
-  background-color:#d9d7d7;
+  background-color: #d9d7d7;
 }
 .buy-price {
   text-align: center;
@@ -295,7 +300,7 @@ input.name-prod:checked + .chek-label::after {
   margin-bottom: 15px;
 }
 .product article {
-  background-color:#e5e5e5;
+  background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -324,13 +329,13 @@ input.name-prod:checked + .chek-label::after {
   width: 44px;
   height: 44px;
 }
-.btn-page-li.active{
+.active-li {
   color: #000;
-  background-color:#fff;
+  background-color: #d4d2cf;
 }
 /*Футер*/
 .main-footer p {
-  margin: 0;
+  margin-top: 0;
 }
 .main-footer {
   margin-top: 65px;
@@ -347,10 +352,11 @@ input.name-prod:checked + .chek-label::after {
   align-items: center;
 }
 .addres-foot,
-.foot-copyrighr {
+.foot-copyright {
   margin: 0;
 }
 .foot-copyright {
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,15 +399,17 @@ input.name-prod:checked + .chek-label::after {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.addres-foot {
-  width: 320px;
-  text-align: left;
-}
+
 .footer-container {
   width: 930px;
   padding: 57px 0 18px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.addres-foot {
+  width: 320px;
+  text-align: left;
+  margin-right: 95px;
 }
 
 .addres-foot a {
@@ -418,10 +426,26 @@ input.name-prod:checked + .chek-label::after {
   list-style: none;
 }
 
-
 /*Логин-пароль*/
 .popup-bg {
-  display: none;
+  display: none ;
+  width: 100%;
+  height: 100%;
+  background-color: #575757d6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.popup-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.popup {
   width: 480px;
   height: 385px;
   color: #000;
@@ -431,26 +455,38 @@ input.name-prod:checked + .chek-label::after {
   background-image: url(/images/index/patern.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
-}
-.popup {
+  padding: 5px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.8s ease 0s;
 }
+
 .popupchek {
   padding: 0;
   margin: 0;
 }
 .popup h2 {
+  position: relative;
   font-size: 32px;
   line-height: 42px;
-  text-align: left;
-  margin-bottom: 15px;
-  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
+.cross-small{
+  position: absolute;
+  top: 150px;
+  left: 1020px;
+  z-index: 4;
+  color: #000;
+  font-size: 18px;
+}
+
 .popup form {
   margin: 0;
   padding: 0;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -458,11 +494,13 @@ input.name-prod:checked + .chek-label::after {
 .label-email {
   font-size: 14px;
   line-height: 24px;
-  width: 210px;
-  margin-bottom: 10px;
+  width: 280px;
+  margin-bottom: 20px;
 }
 .e-mail,
 .password {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-weight: 700;
   width: 300px;
   padding: 10px;
   border: 3px #212121 solid;
@@ -472,19 +510,26 @@ input.name-prod:checked + .chek-label::after {
 .popupchek {
   width: 100%;
   display: flex;
+  justify-content: space-around;
+  vertical-align: baseline;
 }
 .popupchek a {
   display: inline-block;
   margin-left: auto;
+  vertical-align: baseline;
 }
 
-.chek {
+.chek-pop {
   appearance: none;
+  margin:0;
 }
 .memory {
-  margin-bottom: 18px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0 0 20px 0;
 }
 .label-memory {
+  margin: 0;
   padding-left: 25px;
   position: relative;
 }
@@ -511,7 +556,7 @@ input.name-prod:checked + .chek-label::after {
   left: 4px;
   z-index: 2;
 }
-input.chek:checked + .label-memory::after {
+input.chek-pop:checked + .label-memory::after {
   opacity: 1;
 }
 .btn-log {
@@ -521,11 +566,11 @@ input.chek:checked + .label-memory::after {
   padding: 10px 0;
   margin-right: 0;
 }
-.popup.e-mail:focus,
-.popup.password:focus,
-.popup.e-mail:active,
-.popup.password:active {
-  border-color: #f34004;
+.popup .e-mail:focus,
+.popup .password:focus,
+.popup .e-mail:active,
+.popup .password:active {
+  border-color: #996717;
 }
 
 .popup a {
@@ -535,5 +580,8 @@ input.chek:checked + .label-memory::after {
 .popup a:hover,
 .popup a:focus {
   text-decoration: none;
+}
+.show{
+  display: block;
 }
 /**/

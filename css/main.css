@@ -371,7 +371,7 @@ form {
 
 /*Футер*/
 .main-footer p {
-  margin: 0;
+  margin-top: 0;
 }
 .main-footer {
   margin-top: 65px;
@@ -380,7 +380,7 @@ form {
   width: 100%;
   color: #fff;
   background-color: #212121;
-  background-image: url("/images/footer.svg");
+  background-image: url(/images/footer.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   display: flex;
@@ -388,10 +388,11 @@ form {
   align-items: center;
 }
 .addres-foot,
-.foot-copyrighr {
+.foot-copyright {
   margin: 0;
 }
 .foot-copyright {
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -434,15 +435,17 @@ form {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.addres-foot {
-  width: 320px;
-  text-align: left;
-}
+
 .footer-container {
   width: 930px;
   padding: 57px 0 18px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.addres-foot {
+  width: 320px;
+  text-align: left;
+  margin-right: 95px;
 }
 
 .addres-foot a {
@@ -458,6 +461,7 @@ form {
 .foot-contacts ul {
   list-style: none;
 }
+
 
 /*Логин-пароль*/
 .popup-bg {
